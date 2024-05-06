@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- main style -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="./images/logo.svg" alt="" srcset="">
+  <main class="container">
+    <div class="inputs-controller">
+      <section>
+        <h2>Bill</h2>
+        <div class="input-value bill">
+          <input id="bill" class="input-data" type="text">
+        </div>
+      </section>
+      <section class="types">
+        <h2>Select Tip %</h2>
+        <div>
+          <input class="input-btn" type="text" value="5%" readonly>
+          <input class="input-btn" type="text" value="10%" readonly>
+          <input class="input-btn" type="text" value="15%" readonly>
+          <input class="input-btn" type="text" value="25%" readonly>
+          <input class="input-btn" type="text" value="50%" readonly>
+          <input class="input-data custom" type="text"
+                  value="0" min="0" max="100" placeholder="Custom">
+        </div>
+      </section>
+      <section>
+        <h2>Number of People <span class="wrong-input">Can't be zero</span></h2>
+        <div class="input-value people">
+          <input id="people-number" class="input-data" type="text" value="0" >
+        </div>
+      </section>
+    </div>
+    <div class="results">
+      <section>
+        <h2>Tip Amount <span>/ person</span></h2>
+        <p id="tip-amount">00.00</p>
+      </section>
+      <section>
+        <h2>Total <span>/ person</span></h2>
+        <p id="total">00.00</p>
+      </section>
+      <button id="resetBtn" class="disabled">Reset</button>
+    </div>
+  </main>
+
+ <!--  Bill
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="main.js"></script>
+</body>
+</html>
